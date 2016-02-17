@@ -1,5 +1,4 @@
 'use strict';
-
 /**
  * @ngdoc function
  * @name capstoneApp.controller:MainCtrl

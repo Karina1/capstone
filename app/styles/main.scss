@@ -34,7 +34,7 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid midnightblue;
   margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
@@ -98,4 +98,15 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.my-container {
+    a {
+        &:link, &:active, &:visited {
+            color: red;
+        }
+        &:hover {
+            color: green;
+        }
+    }
 }

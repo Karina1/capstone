@@ -1,5 +1,4 @@
 'use strict';
-
 /**
  * @ngdoc function
  * @name capstoneApp.controller:AboutCtrl
@@ -19,6 +18,4 @@ angular.module('capstoneApp')
       // });
       // console.log($scope.pictures);
     };
-
-
   });

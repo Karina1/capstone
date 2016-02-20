@@ -16,20 +16,44 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
+    cdnify: 'grunt-google-cdn',
+    buildcontrol: 'grunt-build-control'
   });
 
-  // Configurable paths for the application
+  //Configurable paths for the application
   var appConfig = {
     app: require('./bower.json').appPath || 'app',
     dist: 'dist'
   };
+  // var config = {
+  //   app: 'app',
+  //   dist: 'dist'
+  // };
 
   // Define the configuration for all the tasks
   grunt.initConfig({
-
     // Project settings
+    // config: config,
     yeoman: appConfig,
+
+    // Start new definitions
+
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      pages: {
+        options: {
+          remote: 'git@github.com:karina1/capstone.git',
+          branch: 'gh-pages'
+        }
+      }
+    },
+
+    // End new definitions
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
@@ -39,14 +63,14 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-        tasks: ['newer:jshint:all', 'newer:jscs:all'],
+        tasks: ['newer:jshint:all'], /*'newer:jscs:all'*/
         options: {
           livereload: '<%= connect.options.livereload %>'
         }
       },
       jsTest: {
         files: ['test/spec/{,*/}*.js'],
-        tasks: ['newer:jshint:test', 'newer:jscs:test', 'karma']
+        tasks: ['newer:jshint:test', 'karma'] /*'newer:jscs:test',*/
       },
       sass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
@@ -139,21 +163,21 @@ module.exports = function (grunt) {
     },
 
     // Make sure code styles are up to par
-    jscs: {
-      options: {
-        config: '.jscsrc',
-        verbose: true
-      },
-      all: {
-        src: [
-          'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
-        ]
-      },
-      test: {
-        src: ['test/spec/{,*/}*.js']
-      }
-    },
+    // jscs: {
+    //   options: {
+    //     config: '.jscsrc',
+    //     verbose: true
+    //   },
+    //   all: {
+    //     src: [
+    //       'Gruntfile.js',
+    //       '<%= yeoman.app %>/scripts/{,*/}*.js'
+    //     ]
+    //   },
+    //   test: {
+    //     src: ['test/spec/{,*/}*.js']
+    //   }
+    // },
 
     // Empties folders to start fresh
     clean: {
@@ -177,6 +201,10 @@ module.exports = function (grunt) {
           require('autoprefixer-core')({browsers: ['last 1 version']})
         ]
       },
+    // autoprefixer: {
+    //   options: {
+    //     browsers: ['last 1 version']
+    //   },
       server: {
         options: {
           map: true
@@ -430,6 +458,12 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      images: {
+        expand: true,
+        cwd: '<%= yeoman.app %>/images',
+        src: '{,*/}*.{png,jpg,jpeg,gif}',
+        dest: '<%= yeoman.dist %>/images'
       }
     },
 
@@ -483,6 +517,7 @@ module.exports = function (grunt) {
     'clean:server',
     'wiredep',
     'concurrent:test',
+    // 'autoprefixer',
     'postcss',
     'connect:test',
     'karma'
@@ -493,6 +528,7 @@ module.exports = function (grunt) {
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
+    // 'autoprefixer',
     'postcss',
     'ngtemplates',
     'concat',
@@ -508,7 +544,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'newer:jshint',
-    'newer:jscs',
+    // 'newer:jscs',
     'test',
     'build'
   ]);

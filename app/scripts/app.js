@@ -31,6 +31,16 @@ angular
           controller: 'AboutCtrl',
           controllerAs: 'about'
       })
+      .when('/map', {
+        templateUrl: 'views/map.html',
+        controller: 'MapCtrl',
+        controllerAs: 'map'
+      })
+      .when('/contact', {
+          templateUrl: 'views/contact.html',
+          controller: 'ContactCtrl',
+          controllerAs: 'contact'
+      })
       .otherwise({
         redirectTo: '/'
       });

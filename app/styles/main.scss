@@ -12,101 +12,101 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 // Additional stylesheets
 @import "content";
+@import "transitions";
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
 
 body {
   padding: 0;
+  height: 100%;
+  margin: 0;
+  background: black;
+  font-family: 'Josefin Slab', serif;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+#map {
+    width: 50%;
+    height: 600px;
+    margin-left: 450px;
+    float: right;
+    border: 3px solid white;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid midnightblue;
-  margin-bottom: 10px;
+/* Solarized Palette - http://ethanschoonover.com/solarized ---------
+  lightgray      : #819090;
+  gray           : #708284;
+  mediumgray     : #536870;
+  darkgray       : #475B62;
+  darkblue       : #0A2933;
+  darkerblue     : #042029;
+  paleryellow    : #FCF4DC;
+  paleyellow     : #EAE3CB;
+  yellow         : #A57706;
+  orange         : #BD3613;
+  red            : #D11C24;
+  pink           : #C61C6F;
+  purple         : #595AB7;
+  blue           : #2176C7;
+  cyan           : #259286;
+  green          : #738A05; */
 
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-}
+// font-family: 'Amatic SC', cursive;
+// font-family: 'Exo 2', sans-serif;
+// font-family: 'Josefin Slab', serif;
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
+// .outerbox {
+//   position:relative;
+//   width: 180px;
+//   height: auto;
+// }
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
+h1 {
+  margin-top: 0px;
+  // position:absolute;
+  // top:150px;
+  // left: 80px;
+  // z-index:7;
+  color: white;
+  font-family: 'Josefin Slab', serif;
+  font-size: 5em;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
+  // @include transition(color .3s ease, font-size .6s ease);
+  // &:hover {
+  //   color: violet;
+  //   font-size: 6em;
+  // }
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
 
-  p + h4 {
-    margin-top: 28px;
-  }
+.massena {
+  margin-top: 0;
+  position: absolute;
+  float: left;
+  left: 50px;
+  // width: 50%;
+  // height: 95%;
+  // padding: 25px 45px 10px 45px;
+  border: 3px solid white;
+  margin: 0px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.btn {
+  background: #595AB7;
+  font-color: white;
 }
 
-.my-container {
-    a {
-        &:link, &:active, &:visited {
-            color: red;
-        }
-        &:hover {
-            color: green;
-        }
-    }
+.container {
+  margin-left: 50px;
 }
+
+//
+// .my-container {
+//     a {
+//         &:link, &:active, &:visited {
+//             color: red;
+//         }
+//         &:hover {
+//             color: blue;
+//         }
+//     }
+// }

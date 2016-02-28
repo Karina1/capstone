@@ -23,13 +23,43 @@ body {
   font-family: 'Josefin Slab', serif;
 }
 
+ul, .navbar-brand  {
+  font-size: 1.2em;
+}
+
+.massena {
+  padding: 10px;
+  border: 3px solid white;
+}
+
 #map {
     width: 50%;
     height: 600px;
-    margin-left: 450px;
     float: right;
     border: 3px solid white;
 }
+
+.left-half {
+  background-color: black;
+  position: absolute;
+  float: left;
+  left: 110px;
+  width: 50%;
+  height: 95%;
+  margin: 0px;
+}
+
+.right-half {
+  background-color: black;
+  position: absolute;
+  float: right;
+  right: 0px;
+  width: 50%;
+  height: 95%;
+  padding: 0px;
+}
+
+
 
 /* Solarized Palette - http://ethanschoonover.com/solarized ---------
   lightgray      : #819090;
@@ -46,6 +76,7 @@ body {
   pink           : #C61C6F;
   purple         : #595AB7;
   blue           : #2176C7;
+  blueish/grn    : #337ab7;
   cyan           : #259286;
   green          : #738A05; */
 
@@ -53,60 +84,48 @@ body {
 // font-family: 'Exo 2', sans-serif;
 // font-family: 'Josefin Slab', serif;
 
-// .outerbox {
-//   position:relative;
-//   width: 180px;
-//   height: auto;
-// }
 
 h1 {
-  margin-top: 0px;
-  // position:absolute;
-  // top:150px;
-  // left: 80px;
-  // z-index:7;
-  color: white;
-  font-family: 'Josefin Slab', serif;
-  font-size: 5em;
+  margin-top: 2px;
+  padding-top: 10px;
+  color: violet;
+  font-size: 5.3em;
   text-align: center;
   // @include transition(color .3s ease, font-size .6s ease);
   // &:hover {
   //   color: violet;
-  //   font-size: 6em;
+  //   font-size: 5.3em;
   // }
 }
+h2 {
+  margin-top: 2px;
+  padding-top: 10px;
+  color: violet;
+  font-size: 4em;
+  text-align: center;
+}
+h3 {
+  margin-left: 70px;
+  color: gray;
 
-
-.massena {
-  margin-top: 0;
-  position: absolute;
-  float: left;
-  left: 50px;
-  // width: 50%;
-  // height: 95%;
-  // padding: 25px 45px 10px 45px;
-  border: 3px solid white;
-  margin: 0px;
 }
 
+.wireframe {
+  margin-left: 70px;
+  padding-top: 20px;
+  background: blue;
+}
 
 .btn {
-  background: #595AB7;
-  font-color: white;
+  background: darkgray;
+  font-size: .3em;
 }
 
-.container {
-  margin-left: 50px;
-}
-
-//
-// .my-container {
-//     a {
-//         &:link, &:active, &:visited {
-//             color: red;
-//         }
-//         &:hover {
-//             color: blue;
-//         }
-//     }
-// }
+    a {
+        &:link, &:active, &:visited  {
+            color: #337ab7;
+        }
+        &:hover {
+            color: lightgray;
+        }
+    }

@@ -1,44 +1,16 @@
-<!-- <div class="panel panel-success">
-  <div class="panel-heading">
-    <h3 class="panel-title">What is this page about?</h3>
-  </div>
-  <div class="panel-body">
-    All about math!
-  </div>
+
+<h2>Project Wireframe</h2>
+<h3>This is a webapp that uses Flickr photos with a specific tag ('pedestrian zone') to locate lat/long of walkable areas in the world.</h3>
+
+<img src="images/capstone_wireframe.jpg" alt="wireframe" class="wireframe" style="width:1000px; height: auto;">
+
+
+
+<!-- 'use strict';
+<div ng-app ng-init="firstnum=1;secondnum=2">
+  <input type="number" min="0" ng-model="firstnum">
+    plus
+  <input type="number" min="0" ng-model="secondnum">
+    equals
+<b>{{firstnum + secondnum}}</b>
 </div> -->
-    <div ng-app="jumbotron" ng-controller="AboutCtrl">
-      <h1>Map for Pedestrian Zones</h1>
-      <p class="lead">
-        <div ng-init="keyword">
-            <input placeholder="search here" ng-model="keyword" class="name"></input>
-        <button class="btn btn-primary" id="button" ng-click="flickrQuery()">SEARCH</button>
-        <div class="row">
-          <div class="col-md-6">
-          <dl>
-            <dd>{{photos.search.title}}<dd>
-            <dt>Title</dt>
-            <dd>{{photos.search.extras.latitude}}</dd>
-            <dt>Latitude</dt>
-            <dd>{{flickr.photos.search.extras.longitude}}</dd>
-            <dt>Longitude</dt>
-          </dl>
-          </div>
-        </div>
-    </div>
-    </p>
-  </div>
-
-
-<div class="jumbotron">
-  <h1>MATHEMATICAL!!</h1>
-  <p>Let's add these numbers!</p>
-  <div ng-app ng-init="firstnum=1;secondnum=2">
-    <input type="number" min="0" ng-model="firstnum">
-      plus
-    <input type="number" min="0" ng-model="secondnum">
-      equals
-    <b>{{firstnum + secondnum}}</b>
-  </div>
-  <br>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Splendid!</a></p>
-</div>

@@ -1,8 +1,5 @@
 //Added a mixin. This transitions from one color to another, and from sm to large font. I created a new <p> tag (pic and chagall)
 //with an <a>. This mixin affects all <a> tags. I found this on Codepen.
-body {
-	color: orange;
-}
 
 .container .jumbotron {
 	@include border-top-radius(50px);

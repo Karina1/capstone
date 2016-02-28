@@ -1,41 +1,62 @@
-<h1>Angular-Google-Maps</h1>
-<h2>Pedestrian Zones</h2>
-
-   <div id="map"></div>
-    <script>
-      function initMap() {
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-          center: {lat: 43.460, lng: 7.28},
-          zoom: 10
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
-
-<div>
-
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-
-</div>
+<!-- <body ng-app="flickrApp" ng-controller="ListController" layout="column" layout-align="top center">
 
 
-<!-- <script type="text/javascript">
-  function initialize() {
-    var mapOptions = {
-      center: new google.maps.LatLng(-34.397, 150.644),
-      zoom: 8,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById('map_canvas'),
-        mapOptions);
-  }
-  </script>
-<body onload="initialize()">
-  <div id="map_canvas" style="height%"></div>
-</body> -->
+    <md-content layout="row" layout-margin layout-fill layout-padding>
+
+        <div class="app-content" >
+
+            <form ng-submit="search()">
+
+                <div ng-show="!isSearching">
+                    <md-input-container class="long">
+                        <label>Search for</label>
+                        <input name="Search for" ng-model="searchTerm">
+                    </md-input-container>
+                </div>
+
+                <md-progress-linear ng-if="isSearching" md-theme="blue" md-mode="indeterminate"></md-progress-linear>
+            </form>
+
+            <md-card ng-repeat="picture in results.photos.photo | limitTo:5">
+                <img ng-src="http://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_b.jpg"  class="md-card-image">
+                <h3>{{ picture.title }}</h3>
+            </md-card>
+
+        </div>
+
+    </md-content> -->
+
+
+    $(function() {
+var apiKey = 'f90b0fdc1b04e6c99b933cddf84d6560';
+var tag = 'treehouse';
+var perPage = '25';
+var showOnPage = '6';
+
+$.getJSON('http://api.flickr.com/services/rest/?format=json&method='+
+'flickr.photos.search&f90b0fdc1b04e6c99b933cddf84d6560=' + f90b0fdc1b04e6c99b933cddf84d6560 +
+'&tags=' + tag + '&per_page=' + perPage + '&jsoncallback=?',
+function(data){
+var classShown = 'class="lightbox"';
+var classHidden = 'class="lightbox hidden"';
+
+$.each(data.photos.photo, function(i, rPhoto){
+    var basePhotoURL = 'http://farm' + rPhoto.farm + '.static.flickr.com/'
+        + rPhoto.server + '/' + rPhoto.id + '_' + rPhoto.secret;
+
+    var thumbPhotoURL = basePhotoURL + '_s.jpg';
+    var mediumPhotoURL = basePhotoURL + '.jpg';
+
+    var photoStringStart = '<a ';
+    var photoStringEnd = 'title="' + rPhoto.title + '" href="'+
+        mediumPhotoURL +'"><img src="' + thumbPhotoURL + '" alt="' +
+        rPhoto.title + '"/></a>;'
+    var photoString = (i < showOnPage) ?
+        photoStringStart + classShown + photoStringEnd :
+        photoStringStart + classHidden + photoStringEnd;
+
+    $(photoString).appendTo("#flickr");
+});
+$("a.lightbox").lightBox();
+});
+});

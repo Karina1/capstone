@@ -14,7 +14,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "content";
 @import "transitions";
 
-
 body {
   padding: 0;
   height: 100%;
@@ -60,34 +59,9 @@ ul, .navbar-brand  {
 }
 
 
-
-/* Solarized Palette - http://ethanschoonover.com/solarized ---------
-  lightgray      : #819090;
-  gray           : #708284;
-  mediumgray     : #536870;
-  darkgray       : #475B62;
-  darkblue       : #0A2933;
-  darkerblue     : #042029;
-  paleryellow    : #FCF4DC;
-  paleyellow     : #EAE3CB;
-  yellow         : #A57706;
-  orange         : #BD3613;
-  red            : #D11C24;
-  pink           : #C61C6F;
-  purple         : #595AB7;
-  blue           : #2176C7;
-  blueish/grn    : #337ab7;
-  cyan           : #259286;
-  green          : #738A05; */
-
-// font-family: 'Amatic SC', cursive;
-// font-family: 'Exo 2', sans-serif;
-// font-family: 'Josefin Slab', serif;
-
-
 h1 {
-  margin-top: 2px;
-  padding-top: 10px;
+  margin-top: 40px;
+  padding-top: 20px;
   color: violet;
   font-size: 5.3em;
   text-align: center;
@@ -113,7 +87,6 @@ h3 {
 .wireframe {
   margin-left: 70px;
   padding-top: 20px;
-  background: blue;
 }
 
 .btn {
@@ -121,11 +94,37 @@ h3 {
   font-size: .3em;
 }
 
+
     a {
         &:link, &:active, &:visited  {
             color: #337ab7;
         }
         &:hover {
-            color: lightgray;
+            color: pink;
         }
     }
+
+
+
+    /* Solarized Palette - http://ethanschoonover.com/solarized ---------
+      lightgray      : #819090;
+      gray           : #708284;
+      mediumgray     : #536870;
+      darkgray       : #475B62;
+      darkblue       : #0A2933;
+      darkerblue     : #042029;
+      paleryellow    : #FCF4DC;
+      paleyellow     : #EAE3CB;
+      yellow         : #A57706;
+      orange         : #BD3613;
+      red            : #D11C24;
+      pink           : #C61C6F;
+      purple         : #595AB7;
+      blue           : #2176C7;
+      blueish/grn    : #337ab7;
+      cyan           : #259286;
+      green          : #738A05; */
+
+    // font-family: 'Amatic SC', cursive;
+    // font-family: 'Exo 2', sans-serif;
+    // font-family: 'Josefin Slab', serif;

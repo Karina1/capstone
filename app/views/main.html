@@ -1,8 +1,8 @@
 <!-- <html>
 <body> -->
 <!-- <div class="container-images"> -->
-  <div> <!--ng-app directive defines an AngularJS application-->
-    <h1>Where in the world can I walk? <button data ng-click="flickrQuery()" class="btn btn-default" type="button" id="button" onClick="document.getElementById('query-results').scrollIntoView();">Search</button></h1>
+  <div ng-controller="MainCtrl"> <!--ng-app directive defines an AngularJS application-->
+    <h1>Where in the world can I walk?</h1>
       <div class="left-half" >
         <div ng-app="">
           <!-- <p class="displayText">{{displayText}}</p> -->
@@ -42,12 +42,12 @@
      </div>
 
 
-
-          <!-- <div ng-if="searchQuery"> -->
-             <!-- <p class="lead">{{citiesFound.count}} cities found matching the query: {{searchQuery}}.</p> -->
-        <!-- <div class="row">
+     <p class="lead">
+     <div ng-repeat="tags []">
+        <div class="row">
           <div class="col-md-6">
           <dl class="flickr-listing" ng-repeat="flickrFound.list">
+            <img src="https://farm{{photo.photos.photo[tags].farm}}.staticflickr.com/{{photo.photos.photo[tags].server}}/{{photo.photos.photo[tags].id}}_{{photo.photos.photo[tags].secret}}_q.jpg">
             <dd>{{photos.search.title}}<dd>
             <dt>Title</dt>
             <dd>{{photos.search.extras.latitude}}</dd>
@@ -55,11 +55,20 @@
             <dd>{{flickr.photos.search.extras.longitude}}</dd>
             <dt>Longitude</dt>
             </dl>
-          </div> -->
-          <!-- <div class="col-md-6"> -->
-            <!-- <div ng-if="storage.recentSearches" ng-repeat = "city in storage.recentSearches"> -->
-            <!-- {{city}} -->
-            <!-- </div> -->
-          <!-- </div><!--row-->
-        <!-- </div> <!--<!--map-->
-  <!-- </div> <!--whole thing-->
+          </div>
+
+
+
+
+
+  <p class="lead">
+  <div ng-repeat="tags in [0,1,2,3,4,5,6] track by $index">
+  <div class="col-md-4 col-lg-4 col-sm-4">
+  <img src="https://farm{{photo.photos.photo[tags].farm}}.staticflickr.com/{{photo.photos.photo[tags].server}}/{{photo.photos.photo[tags].id}}_{{photo.photos.photo[tags].secret}}_q.jpg">
+  </div>
+  </div>
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>')}]);

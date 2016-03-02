@@ -17,9 +17,15 @@
        query: {
          method:'GET',
          params:{
-           photoId: '' // Paris, FR
+           photoId: '' //
         },
        isArray:false
       }
     });
   });
+
+
+
+
+
+  // <a class='image-link' href='http://www.flickr.com/photos/" . $photo['owner'] . "/" . $photo['id'] . "/'>" . "<img class='img-circle' src='http://farm" . $photo['farm'] . ".static.flickr.com/" . $photo['server'] . "/" . $photo['id'] . "_" . $photo['secret'] . "_s.jpg' alt='". $photo['title'] . "'/>" . "</a> <br>" . "<a class='owner-link' href='http://www.flickr.com/people/" . $photo['owner'] . "/'>credits</a>";

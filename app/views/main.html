@@ -1,38 +1,68 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<!-- <html>
+<body> -->
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-
-</div>
-
-<div class="jumbotron">
-  <h1>MATHEMATICAL!!</h1>
-  <p>Let's add these numbers!</p>
-  <div ng-app ng-init="firstnum=1;secondnum=2">
-    <input type="number" min="0" ng-model="firstnum">
-      plus
-    <input type="number" min="0" ng-model="secondnum">
-      equals
-    <b>{{firstnum + secondnum}}</b>
+<div> <!--ng-app directive defines an AngularJS application-->
+  	<h1>Where in the world can I walk?</h1>
+    <div class="left-half" >
+      <div ng-app="">
+        <!-- <p class="displayText">{{displayText}}</p> -->
+    </div>
+      <img ng-src="{{myPicture}}" class="massena" width='600' height='600'/>
+    </div>
   </div>
-  <br>
-  <p><a class="btn btn-primary btn-lg" href="#/" role="button">Splendeed!</a></p>
-</div>
+
+  <div class="right-half">
+    <p class="lead"></p>
+      <div ng-init="location=''">
+        <div id="map">
+        </div>
+      </div>
+
+
+  <!-- <div ng-controller="MainCtrl"> <!--ng-app directive defines an AngularJS application-->
+
+
+       <script>
+         function initMap() {
+           var mapDiv = document.getElementById('map');
+           var map = new google.maps.Map(mapDiv, {
+             center: {lat: 43.460, lng: 7.28},
+             zoom: 6
+           });
+         }
+       </script>
+       <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+           async defer></script>
+      <!-- </div> -->
+
+
+     <!-- <p class="lead">
+     <div ng-repeat="tags []">
+        <div class="row">
+          <div class="col-md-6">
+          <dl class="flickr-listing" ng-repeat="flickrFound.list">
+            <img src="https://farm{{photo.photos.photo[tags].farm}}.staticflickr.com/{{photo.photos.photo[tags].server}}/{{photo.photos.photo[tags].id}}_{{photo.photos.photo[tags].secret}}_q.jpg">
+            <dd>{{photos.search.title}}<dd>
+            <dt>Title</dt>
+            <dd>{{photos.search.extras.latitude}}</dd>
+            <dt>Latitude</dt>
+            <dd>{{flickr.photos.search.extras.longitude}}</dd>
+            <dt>Longitude</dt>
+            </dl>
+          </div> -->
+
+
+
+
+<!--
+  <p class="lead">
+  <div ng-repeat="tags in [0,1,2,3,4,5,6] track by $index">
+  <div class="col-md-4 col-lg-4 col-sm-4">
+  <img src="https://farm{{photo.photos.photo[tags].farm}}.staticflickr.com/{{photo.photos.photo[tags].server}}/{{photo.photos.photo[tags].id}}_{{photo.photos.photo[tags].secret}}_q.jpg">
+  </div>
+  </div>
+  </p>
+  </div>
+  </div>
+  </div>
+  </div> -->

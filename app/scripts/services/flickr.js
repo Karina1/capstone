@@ -1,3 +1,5 @@
+// Service is used to grab API data
+
 'use strict';
 /**
  * @ngdoc service
@@ -13,13 +15,14 @@
      // ...
 
      // Public API here
-     return $resource('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f90b0fdc1b04e6c99b933cddf84d6560&tags=treehouse&format=json&nojsoncallback=1', {}, {
+     return $resource('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f90b0fdc1b04e6c99b933cddf84d6560&tags=:tag&format=json&nojsoncallback=1', {}, {
+    //  return $resource('http://api.flickr.com/services/rest/?&method=flickr.people.getPublicPhotos&api_key=f90b0fdc1b04e6c99b933cddf84d6560&user_id=21679005@N07', {}, {
        query: {
          method:'GET',
          params:{
-           tags: 'treehouse' // Paris, FR
+           tag: '', //pedestrian bridge, pedestrian zone, high line, capilano suspension bridge,
         },
-       isArray:false
+       isArray: false
       }
     });
   });

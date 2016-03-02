@@ -1,32 +1,27 @@
 <!-- <html>
 <body> -->
-<!-- <div class="container-images"> -->
-  <div ng-controller="MainCtrl"> <!--ng-app directive defines an AngularJS application-->
-    <h1>Where in the world can I walk?</h1>
-      <div class="left-half" >
-        <div ng-app="">
-          <!-- <p class="displayText">{{displayText}}</p> -->
-        </div>
-          <img ng-src="{{ myPicture }}" class="massena" width='600' height='600'/>
-      </div>
+
+<div> <!--ng-app directive defines an AngularJS application-->
+  	<h1>Where in the world can I walk?</h1>
+    <div class="left-half" >
+      <div ng-app="">
+        <!-- <p class="displayText">{{displayText}}</p> -->
+    </div>
+      <img ng-src="{{myPicture}}" class="massena" width='600' height='600'/>
+    </div>
   </div>
 
   <div class="right-half">
-      <h3></h3>
     <p class="lead"></p>
-      <div ng-init="location='Nice, France'">
-        <div class="row">
-          <div class="col-md-6">
-          <dl class="flickr-img" ng-repeat="city in citiesFound.list">
-            <dd>{{city.name}}<dd>
-            <dt>City</dt>
-            </dl>
-          </div>
-          </div>
-  </div> <!--ng int-->
-  </div> <!--right half -->
+      <div ng-init="location=''">
+        <div id="map">
+        </div>
+      </div>
 
-      <div id="map"></div>
+
+  <!-- <div ng-controller="MainCtrl"> <!--ng-app directive defines an AngularJS application-->
+
+
        <script>
          function initMap() {
            var mapDiv = document.getElementById('map');
@@ -38,11 +33,10 @@
        </script>
        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
            async defer></script>
+      <!-- </div> -->
 
-     </div>
 
-
-     <p class="lead">
+     <!-- <p class="lead">
      <div ng-repeat="tags []">
         <div class="row">
           <div class="col-md-6">
@@ -55,12 +49,12 @@
             <dd>{{flickr.photos.search.extras.longitude}}</dd>
             <dt>Longitude</dt>
             </dl>
-          </div>
+          </div> -->
 
 
 
 
-
+<!--
   <p class="lead">
   <div ng-repeat="tags in [0,1,2,3,4,5,6] track by $index">
   <div class="col-md-4 col-lg-4 col-sm-4">
@@ -71,4 +65,4 @@
   </div>
   </div>
   </div>
-  </div>')}]);
+  </div> -->

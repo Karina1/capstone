@@ -9,7 +9,7 @@
 //  */
       angular.module('capstoneApp')
         .controller('MainCtrl', function ($scope, flickr) {
-          $scope.myPicture = "images/massena.jpg",
+          $scope.myPicture = "images/massena.jpg";
           $scope.flickrQuery = function(){
             $scope.picturesId = flickr.query({
               tag: $scope.keyword
@@ -22,10 +22,10 @@
           };
         });
 
-        function initMap() {
-          var mapDiv = document.getElementById('map');
-          var map = new google.maps.Map(mapDiv, {
-            center: {lat: 43.460, lng: 7.28},
-            zoom: 8
-          });
-        }
+        // function initMap() {
+        //   var mapDiv = document.getElementById('map');
+        //   var map = new google.maps.Map(mapDiv, {
+        //     center: {lat: 43.460, lng: 7.28},
+        //     zoom: 8
+        //   });
+        // }

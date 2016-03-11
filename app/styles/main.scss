@@ -18,7 +18,7 @@ body {
   padding: 0;
   height: 100%;
   margin: 0;
-  background: gray;
+  background: darkgray;
   font-family: 'Josefin Slab';
 }
 
@@ -39,15 +39,15 @@ body {
     margin-top: -85px
 }
 
-img {
-    // border-radius: 50%;
-    -webkit-transition: -webkit-transform 1s ease-in-out;
-    transition: transform 1s ease-in-out;
-}
-img:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
+// img {
+//     // border-radius: 50%;
+//     -webkit-transition: -webkit-transform 1s ease-in-out;
+//     transition: transform 1s ease-in-out;
+// }
+// img:hover {
+//     -webkit-transform: rotate(360deg);
+//     transform: rotate(360deg);
+// }
 
 
 .right-half {
@@ -118,13 +118,13 @@ ul li{
   font-size: 1.4em;
   text-transform: lowercase;
 }
-.pattern {
-background-color: lightgray;
-background-image: linear-gradient(45deg, darkgray 25%, transparent 25%, transparent 75%, darkgray 75%, darkgray),
-linear-gradient(45deg, darkgray 25%, transparent 25%, transparent 75%, darkgray 75%, white);
-background-size:60px 60px;
-background-position:0 0, 30px 30px
-}
+// .pattern {
+// background-color: lightgray;
+// background-image: linear-gradient(45deg, darkgray 25%, transparent 25%, transparent 75%, darkgray 75%, darkgray),
+// linear-gradient(45deg, darkgray 25%, transparent 25%, transparent 75%, darkgray 75%, white);
+// background-size:60px 60px;
+// background-position:0 0, 30px 30px
+// }
 
 section {
 	// background: black;
@@ -144,15 +144,15 @@ section {
   font: white;
   z-index: -1;
 }
-section + p {
-@include transition(color .3s ease, font-size .6s ease);
-&:hover {
-  color: gold;
-  text-shadow: 2px;
-  font-size: 5.9em;
-  font-family: 'Calligraffitti', cursive;
-  }
-}
+// section + p {
+// @include transition(color .3s ease, font-size .6s ease);
+// &:hover {
+//   color: gold;
+//   text-shadow: 2px;
+//   font-size: 5.9em;
+//   font-family: 'Calligraffitti', cursive;
+//   }
+// }
 //
 // section:hover {
 // 	height: 200px;
@@ -182,6 +182,13 @@ a.massena:active {
 	-moz-transform: rotate(0deg) scale(1.05);
 	transform: rotate(0deg) scale(1.05);
 }
+#main-map {
+  background-color: pink;
+  height: 95%;
+  width: 1800px;
+  margin: 10px;
+}
+
 
     /* Solarized Palette - http://ethanschoonover.com/solarized ---------
       lightgray      : #819090;

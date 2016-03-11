@@ -9,30 +9,7 @@
         Boulevard St Laurent in Montreal *
       </section>
     <div class="left-half" >
-      <div ng-app="">
         <!-- <p class="displayText">{{displayText}}</p> -->
     </div>
       <a><img  ng-src="{{myPicture}}" class="massena" width='600' height='600'></a>
     </div>
-
-  <div class="right-half">
-    <div id="map">
-    <!-- <p class="lead"></p> -->
-      <!-- <div ng-init="location=''"> -->
-        <!-- <div id="map"></div> -->
-        <!-- <div id="map" ng-app="ngMap"> -->
-      </div>
-      <script>
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 43.697063, lng: 7.270327},
-          zoom: 19,
-          mapTypeId: google.maps.MapTypeId.SATELLITE
-        });
-        map.setTilt(45);
-      }
-      </script>
-
-
-       <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-           async defer></script>

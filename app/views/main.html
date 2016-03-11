@@ -1,15 +1,21 @@
 <!-- <html>
 <body> -->
   <!-- Simle Map http://ngmap.github.io/#/!map-simple.html -->
-
+<!--
 <div ng-app="">
   <div id="main-map">
       <ng-map center="[40.74, -74.18]"></ng-map>
   </div>
+</div> -->
+
+
+<div ng-repeat="image in flickrData.photos.photo">
+    <img src="{{ image.url_m }}" alt="{{ image.title }}">
+    <br>
+    Lat: {{ image.lat }} Lon: {{ image.lon }}
+    <br>
+    Tags: {{ image.tags }}
 </div>
-
-
-
 
 
 <script>

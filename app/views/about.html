@@ -1,16 +1,38 @@
+ <!--ng-app directive defines an AngularJS application-->
+  	<h1>Where in the world can I walk?</h1>
+      <p><a class="btn btn-primary" ng-click="refreshFlickr()">Search</a></p>
+      <section>
+        Stroeget in Copenhagen * pedestrian zone Capilano Suspension bridge pedestrian bridge pedestrian precinct pedestrian walkway Stroeget in Copenhagen pedestrian zone pedestrian zone pedestrian zone pedestrian pedestrian zone pedestrian zone pedestrian pedestrian zone Buchanan Street Glasgow  pedestrian pedestrian zone pedestrian zone pedestrian
+        Boulevard St Laurent in Montreal * pedestrian zone * Lynn Canyon Suspension Bridge in Vancouver * pedestrian zone Boulevard St Laurent Montreal Las Ramblas in Barcelona pedestrian zone Buchanan Street Glasgow  pedestrian zone pedestrian zone pedestrian zone pedestrian pedestrian zone pedestrian zone pedestrian zone stroeget pedestrian zone pedestrian zone pedestrian zone pedestrian pedestrian zone pedestrian zone
+        St Laurent Montreal * Las Ramblas pedestrian zone Buchanan Street Glasgow pedestrian zone pedestrian pedestrian zone pedestrian zone High Line in NYC pedestrian zone Capilano Suspension bridge pedestrian bridge pedestrian precinct pedestrian walkway Stroeget in Copenhagen pedestrian zone pedestrian zone pedestrian zone pedestrian pedestrian zone pedestrian zone pedestrian pedestrian zone pedestrian zone pedestrian pedestrian zone pedestrian zone pedestrian
+        pedestrian zone pedestrian zone Capilano Suspension Bridge in Vancouver pedestrian zone Stroeget in Copenhage pedestrian zone Capilano Suspension bridge pedestrian bridge Buchanan Street Glasgow  pedestrian walkway Las Ramblas Stroeget in Copenhage pedestrian zone Capilano Suspension bridge High Line in NYC pedestrian precinct pedestrian walkway Stroeget in Copenhagen pedestrian zone pedestrian zone pedestrian zone pedestrian pedestrian zone pedestrian zone pedestrian pedestrian zone pedestrian zone pedestrian pedestrian zone pedestrian zone pedestrian
+        Boulevard St Laurent in Montreal *
+      </section>
+    <div class="left-half" >
+      <div ng-app="">
+        <!-- <p class="displayText">{{displayText}}</p> -->
+    </div>
+      <a><img  ng-src="{{myPicture}}" class="massena" width='600' height='600'></a>
+    </div>
 
-<h2>Project Wireframe</h2>
-<h3>This is a webapp that uses Flickr photos with a specific tag ('pedestrian zone') to locate lat/long of walkable areas in the world.</h3>
+  <div class="right-half">
+    <div id="map">
+    <!-- <p class="lead"></p> -->
+      <!-- <div ng-init="location=''"> -->
+        <!-- <div id="map"></div> -->
+        <!-- <div id="map" ng-app="ngMap"> -->
+      </div>
+      <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.697063, lng: 7.270327},
+          zoom: 19,
+          mapTypeId: google.maps.MapTypeId.SATELLITE
+        });
+        map.setTilt(45);
+      }
+      </script>
 
-<img src="images/capstone_wireframe.jpg" alt="wireframe" class="wireframe" style="width:1000px; height: auto;">
 
-
-
-<!-- 'use strict';
-<div ng-app ng-init="firstnum=1;secondnum=2">
-  <input type="number" min="0" ng-model="firstnum">
-    plus
-  <input type="number" min="0" ng-model="secondnum">
-    equals
-<b>{{firstnum + secondnum}}</b>
-</div> -->
+       <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+           async defer></script>

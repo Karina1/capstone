@@ -36,6 +36,11 @@ angular
         controller: 'MapCtrl',
         controllerAs: 'map'
       })
+      .when('/images', {
+        templateUrl: 'views/images.html',
+        controller: 'ImagesCtrl',
+        controllerAs: 'images'
+      })
       .otherwise({
         redirectTo: '/'
       });

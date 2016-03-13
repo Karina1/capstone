@@ -1,29 +1,16 @@
 <!-- <html>
 <body> -->
-  <!-- Simle Map http://ngmap.github.io/#/!map-simple.html -->
-<!--
-<div ng-app="">
-  <div id="main-map">
-      <ng-map center="[40.74, -74.18]"></ng-map>
-  </div>
-</div> -->
-
-
-<div ng-repeat="image in flickrData.photos.photo">
-    <img src="{{ image.url_m }}" alt="{{ image.title }}">
-    <br>
-    Lat: {{ image.lat }} Lon: {{ image.lon }}
-    <br>
-    Tags: {{ image.tags }}
+<div>
+  <div class="flyout">
+  <button class="flyout-toggle">Go to Map</button>
+  <div class="flyout-content"></div>
 </div>
-
-
-<script>
-
-
-
-
-
-
-
-</script>
+  <h2>Pedestrian Places Around the World</h2>
+    <ul id="photos" ng-repeat="image in flickrData.photos.photo | limitTo: 700">
+      <li><a href="#"><img src="{{ image.url_m }}" height="300" width="auto"/><div><h3>{{ image.title }}</h3></div></a></li>
+  <!-- <br> -->
+  <!-- Lat: {{ image.lat }} Lon: {{ image.lon }} -->
+  <!-- <br> -->
+  <!-- Tags: {{ image.tags }} -->
+    </ul>
+</div>

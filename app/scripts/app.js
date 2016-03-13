@@ -18,6 +18,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch'
+    // 'ngMap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -35,11 +36,6 @@ angular
         templateUrl: 'views/map.html',
         controller: 'MapCtrl',
         controllerAs: 'map'
-      })
-      .when('/images', {
-        templateUrl: 'views/images.html',
-        controller: 'ImagesCtrl',
-        controllerAs: 'images'
       })
       .otherwise({
         redirectTo: '/'

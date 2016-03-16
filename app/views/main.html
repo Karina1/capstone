@@ -2,15 +2,17 @@
 <body> -->
 <div>
   <div class="flyout">
-  <button class="flyout-toggle">Go to Map</button>
+  <button class="flyout-toggle"><a href="#/map">Map</a></button>
+  <button class="myzones"><a href="#/about">About</a></button>
   <div class="flyout-content"></div>
 </div>
-  <h2>Pedestrian Places Around the World</h2>
-    <ul id="photos" ng-repeat="image in flickrData.photos.photo | limitTo: 700">
-      <li><a href="#"><img src="{{ image.url_m }}" height="300" width="auto"/><div><h3>{{ image.title }}</h3></div></a></li>
-  <!-- <br> -->
-  <!-- Lat: {{ image.lat }} Lon: {{ image.lon }} -->
-  <!-- <br> -->
-  <!-- Tags: {{ image.tags }} -->
+  <h2>Where in the world can I walk?</h2>
+    <h3>Flickr images tagged with "pedestrian zone" or "pedestrian bridge" where people are walking right now</h3>
+    <ul id="photos" ng-repeat="image in flickrData.photos.photo">
+      <li><a href="https://www.flickr.com/photos/"{{ photo.owner_name }}"/"><img src="{{ image.url_m }}" height="300" width="auto"/><div><h3>{{ image.title }}</h3></div></a></li>
+  <!-- <br>
+  Lat: {{ image.lat }} Lon: {{ image.lon }}
+  <br>
+   Tags: {{ image.tags }} -->
     </ul>
 </div>

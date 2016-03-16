@@ -1,24 +1,31 @@
 <!-- <html>
 <body> -->
- <!--ng-app directive defines an AngularJS application-->
-<!-- <div class="container"> -->
-    <h1>Where in the world can I walk?</h1>
-    <div>
-      <img src="{{ featuredImage.url }}" alt="{{ featuredImage.title }}" height='400' width='auto'>
-    </div>
-<!-- </div> -->
+  <div>
+    <h2>Image of the Day<small>Pedestrian Zones<small></h2>
+    <h3>Examples of global pedestrian-friendly places</h3>
+  </div>
+
+    <!-- <div ng-controller="AboutCtrl"> -->
+      <img ng-src="{{featuredImage}}" class="massena" width='600' height='600'alt="Image of {{ featuredImage.title }}"/>
+      <a href="#" class="thumbnail">
+      <p class="tBlock"> {{n.title}} </p>
+      </a>
+      <p><a class="btn btn-primary" ng-click="refreshFlickr()"> Another</a></p>
+  <!-- </div> -->
+
+  <div>
+    <div class="flyout">
+    <button class="myzones"><a href="#/">Main</a></button>
+    <button class="flyout-toggle"><a href="#/map">Map</a></button>
+    <div class="flyout-content"></div>
+  </div>
+<!-- navig
 
 
 
+          <!-- <p class="displayText">{{displayText}}</p>
+      </div> -->
 
-      <!-- <p><a class="btn btn-primary" ng-click="refreshFlickr()">Search</a></p>
-      <section>
-        Stroeget in Copenhagen * Lincoln Road in Miami * Capilano Suspension Bridge in Vancouver pedestrian precinct pedestrian walkway Stroeget in Copenhagen pedestrian zone pedestrian zone pedestrian zone pedestrian pedestrian zone pedestrian zone pedestrian pedestrian zone Buchanan Street Glasgow  pedestrian pedestrian zone pedestrian zone pedestrian
-        Boulevard St Laurent in Montreal *
-      </section>
-    <div class="left-half" >
+
         <!-- <p class="displayText">{{displayText}}</p> -->
-    <!-- </div>
-      <a><img  ng-src="{{myPicture}}" class="massena" width='600' height='600'></a>
-    </div>
- -->
+      <!-- <a><img  ng-src="{{myPicture}}" class="massena" width='600' height='600'></a> -->

@@ -1,7 +1,6 @@
 'use strict';
-//
       angular.module('capstoneApp')
-       .controller('AboutCtrl', function ($scope, flickr) {
+       .controller('AboutCtrl', function ($scope, featuredImage) {
          var imageArray = [
            {
              'title': 'Buchanan Street in Glasgow',
@@ -59,15 +58,20 @@
              'title': 'Passerelle de Simone de Beauvoir in Paris',
              'url': 'images/simonedebeauvoir.jpg'
            },
+           {
              'title': 'Place Massena in Nice',
              'url': 'images/massena.jpg'
-            },
+           },
+           {
              'title': 'Place Massena in Nice',
              'url': 'images/massena-nice-1.jpg'
            },
+           {
              'title': 'Place Massena in Nice',
              'url': 'images/massena.jpg'
             }
          ];
+
+
          $scope.featuredImage = $scope.imageArray[Math.floor(Math.random() * imageArray.length)];
        });

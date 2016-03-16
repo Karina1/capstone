@@ -13,7 +13,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // Additional stylesheets
 @import "content";
 @import "transitions";
-
+// font-family: 'Amatic SC', cursive;
+// font-family: 'Exo 2', sans-serif;
+// font-family: 'Josefin Slab', serif;
 body {
   padding: 0;
   height: 100%;
@@ -21,25 +23,24 @@ body {
   background: darkgray;
   font-family: 'Josefin Slab';
 }
-
-// .massena {
-//     width: 80%;
-//     height: auto;
-//     padding: 20px;
-//     margin-left: 90px;
-//     z-index: -1;
-//     margin-top: -85px
+.container {
+  background: gray;
+  padding-bottom: 15px;
+}
+// .frame {
+//   background: blue;
+  // padding-bottom: 15px;
 // }
-
-// img {
-//     // border-radius: 50%;
-//     -webkit-transition: -webkit-transform 1s ease-in-out;
-//     transition: transform 1s ease-in-out;
-// }
-// img:hover {
-//     -webkit-transform: rotate(360deg);
-//     transform: rotate(360deg);
-// }
+// View - About
+.massena {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin-left: 90px;
+    z-index: -1;
+    margin-top: -85px
+    // background-color: green;
+}
 
 // #map {
 //     top: -280px;
@@ -50,82 +51,88 @@ body {
 //     z-index: -2;
 // }
 
-h1  {
-  // font-family: 'Calligraffitti';
-  margin-top: 20px;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  color: gold;
-  font-size: 5.9em;
-  text-align: center;
-  text-shadow: gray 2px 2px;
-  // @include transition(color .3s ease, font-size .6s ease);
-  // &:hover {
-  //   color: gold;
-  //   text-shadow: 2px;
-  //   font-size: 5.9em;
-  //   // font-family: 'Calligraffitti';
-  // }
-}
 h2 {
-  margin-top: 20px;
-  padding-top: 20px;
-  // color: gold;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 0;
   font-size: 4em;
   text-align: center;
-  text-transform: capitalize;;
+  text-transform: uppercase;
+  // @include transition(color .3s ease, font-size .6s ease);
+  // &:hover {
+  //   color: gray;
+  //   text-shadow: black 2px;
+  //   font-size: 4.3em;
+  //   letter-spacing: 2px;
+  //   font-family: 'Calligraffitti';
+  // }
 }
 h3 {
-  margin-left: 70px;
-  color: gray;
+  // margin-left: 70px;
+  text-align: center;
+  color: white;
+  padding-top: 0;
+  margin-top: -5px;
 
 }
 
-nav  ul li{
-  // font-weight: bold;
-  font-size: .8em;
-  text-transform: uppercase;
-  list-style-type: none;
-  height: 8px;
-}
 .flyout-toggle {
     position: absolute;
     transform: rotate(90deg);
-    top: 50%;
+    top: 25%;
     left: -50px;
-    z-index: 998;
-    width: 85px;
-    height: 35px;
-    font-size: 1em;
-    background: violet;
+    // z-index: 998;
+    width: 95px;
+    height: 45px;
+    font-size: 1.2em;
+    font-color: white;
+    font-weight: bold;
+    background: cornflowerblue;
     border: solid #fff 2px;
+    letter-spacing: 3px;
+    font: white;
 }
-// .flyout-content {
-//     z-index:997
+.myzones {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 10%;
+    left: -50px;
+    // z-index: 998;
+    width: 95px;
+    height: 45px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-color: white;
+    background: #4cae4c;
+    border: solid #fff 2px;
+    line-height: 15px;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+}
+// 
+// .flyout-toggle  .myzones {
+//   color: blue;
 // }
+
+.flyout-content {
+    z-index:997
+}
 .flyout {
     position: fixed;
     z-index: 999;
     top: 0;
-    right: -100px;
+    right: -115px;
     width: 15%;
     height: 100%;
     // border-left: solid #fff 1px;
     background: darkgray;
     -webkit-box-shadow: 0px -5px 15px 0px #bfbfbf;
-    box-shadow: 0px -5px 15px 0px #bfbfbf;
+    // box-shadow: 0px -5px 15px 0px #bfbfbf;
     transition: all .3s ease-in-out;
 }
 
 // a:link:active, a:visited:active {
 //     color: (internal value);
-// }
-
-// .btn {
-//   background-color: gold;
-//   margin-left: 540px;
-//   font-size: 1.4em;
-//   text-transform: lowercase;
 // }
 
 #photos {
@@ -188,10 +195,10 @@ nav  ul li{
 	font-size: 1.2em;
 	letter-spacing: 2px;
 	padding: 0;
-  margin-left: 20px;
+  // margin-left: 40px;
 }
 
-/* Example for media query: change number of items per row */
+/* Media query: change number of items per row */
 
 @media screen and (max-width: 1190px) {
 	#photos li {
@@ -217,122 +224,33 @@ nav  ul li{
 	}
 }
 
-@media screen and (max-width: 660px) {
-	#photos li {
-		width: 33.3333333%; /* Fallback */
-		width: -webkit-calc(100% / 3);
-		width: calc(100% / 3);
-	}
-}
-
 @media screen and (max-width: 400px) {
 	#photos li {
 		width: 50%; /* Fallback */
 		width: -webkit-calc(100% / 2);
 		width: calc(100% / 2);
 	}
+  .flyout-toggle {
+    // right: -120px;
+    font-size: 1.2em;
+    width: 33.3333333%; /* Fallback */
+    // width: -webkit-calc(100% / 3);
+    // width: calc(100% / 3);
+    color: green;
+  }
+  h1 {
+    font-size: .8em;
+  }
+  .container {
+    background-color: cornflowerblue;
+  }
 }
 
 @media screen and (max-width: 300px) {
 	#photos li {
 		width: 100%;
 	}
+  h2 {
+    font-size: .3em;
+  }
 }
-// .pattern {
-// background-color: lightgray;
-// background-image: linear-gradient(45deg, darkgray 25%, transparent 25%, transparent 75%, darkgray 75%, darkgray),
-// linear-gradient(45deg, darkgray 25%, transparent 25%, transparent 75%, darkgray 75%, white);
-// background-size:60px 60px;
-// background-position:0 0, 30px 30px
-// }
-
-// section {
-// 	// background: black;
-// 	opacity: 0.6;
-//   // height: 700px;
-//   // width: 800px;
-// 	font: 1.15em fantasy;
-// 	letter-spacing: 2px;
-// 	position: absolute;
-// 	top: 0px;
-// 	left: 10px;
-// 	padding: 5px;
-// 	width: 600px;
-//   height: 100px;
-// 	border-radius: 25px;
-// 	transition: 5s height;
-//   font: white;
-//   z-index: -1;
-// }
-// section + p {
-// @include transition(color .3s ease, font-size .6s ease);
-// &:hover {
-//   color: gold;
-//   text-shadow: 2px;
-//   font-size: 5.9em;
-//   font-family: 'Calligraffitti', cursive;
-//   }
-// }
-//
-// section:hover {
-// 	height: 200px;
-// }
-
-
-// a.massena {
-// 	/* ... */
-// 	z-index: 2;
-// 	-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-// 	-moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-// 	box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-// 	-webkit-transform: rotate(10deg);
-// 	-moz-transform: rotate(10deg);
-// 	transform: rotate(10deg);
-// 	-webkit-transition: all 0.5s ease-in;
-// }
-// a.massena:hover,
-// a.massena:focus,
-// a.massena:active {
-// 	z-index: 999;
-// 	border-color: #6A6A6A;
-// 	-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-// 	-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-// 	box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-// 	-webkit-transform: rotate(0deg) scale(1.05);
-// 	-moz-transform: rotate(0deg) scale(1.05);
-// 	transform: rotate(0deg) scale(1.05);
-// }
-// #main-map {
-//   background-color: pink;
-//   height: 95%;
-//   width: 1800px;
-//   margin: 10px;
-// }
-//
-// .container {
-//   background: pink;
-// }
-//
-
-    /* Solarized Palette - http://ethanschoonover.com/solarized ---------
-      lightgray      : #819090;
-      gray           : #708284;
-      mediumgray     : #536870;
-      darkgray       : #475B62;
-      darkblue       : #0A2933;
-      darkerblue     : #042029;
-      paleryellow    : #FCF4DC;
-      paleyellow     : #EAE3CB;
-      yellow         : #A57706;
-      orange         : #BD3613;
-      red            : #D11C24;
-      pink           : #C61C6F;
-      purple         : #595AB7;
-      blue           : #2176C7;
-      blueish/grn    : #337ab7;
-      cyan           : #259286;
-      green          : #738A05; */
-
-    // font-family: 'Amatic SC', cursive;
-    // font-family: 'Exo 2', sans-serif;
-    // font-family: 'Josefin Slab', serif;

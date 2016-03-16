@@ -1,6 +1,6 @@
 'use strict';
       angular.module('capstoneApp')
-       .controller('AboutCtrl', function ($scope, featuredImage) {
+       .controller('AboutCtrl', function ($scope) {
          var imageArray = [
            {
              'title': 'Buchanan Street in Glasgow',
@@ -72,6 +72,9 @@
             }
          ];
 
+         $scope.refreshFlickr = function() {
+            $scope.featuredImage = imageArray[Math.floor(Math.random() * imageArray.length)];
+         };
 
-         $scope.featuredImage = $scope.imageArray[Math.floor(Math.random() * imageArray.length)];
+         $scope.refreshFlickr();
        });

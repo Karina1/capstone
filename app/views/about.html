@@ -6,9 +6,8 @@
   </div>
 
     <!-- <div ng-controller="AboutCtrl"> -->
-      <img ng-src="{{featuredImage}}" class="massena" width='600' height='600'alt="Image of {{ featuredImage.title }}"/>
-      <a href="#" class="thumbnail">
-      <p class="tBlock"> {{n.title}} </p>
+      <img ng-src="{{featuredImage.url}}" class="massena" width='600' height='600'alt="Image of {{ featuredImage.title }}"/>
+      <p class="tBlock"> {{featuredImage.title}} </p>
       </a>
       <p><a class="btn btn-primary" ng-click="refreshFlickr()"> Another</a></p>
   <!-- </div> -->

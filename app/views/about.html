@@ -6,17 +6,15 @@
     </a></h2>
   </div>
 
-  <div>
     <div ng-controller="AboutCtrl">
     <div class="frame">
       <p class="tBlock"> <!--<a href="{{featuredImage.source}} /">--> {{featuredImage.title}}</a></p>
-      <img ng-src="{{featuredImage.url}}" class="massena" alt="{{ featuredImage.title }}"/>
+      <p><a href="{{featuredImage.source}}"><img ng-src="{{featuredImage.url}}" class="massena" alt="{{ featuredImage.title }}"/><a/></p>
     </div>
   </div>
-  </div>
 
-  <div>
     <div class="flyout">
       <button class="flyout-toggle"><a href="#/">Main</a></button>
+      <button class="myzones"><a href="https://en.wikipedia.org/wiki/List_of_car-free_places">More</a></button>
     <div class="flyout-content"></div>
   </div>

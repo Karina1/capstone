@@ -14,14 +14,16 @@
            },
            {
              'title': 'Cat Street - Shibuya - in Tokyo',
-             'url': 'images/catstreet_tokyo.jpg'
+             'url': 'images/catstreet_tokyo.jpg',
+             'source': 'https://www.flickr.com/photos/alexbarlow/14870462970/in/photolist-8BGEV5-oWKeuP-oE41yA-roJykK-9yHUgn-oCe68p-rfL5kW-o9D69D-nkneWY-rS9cHA-eb2YHy-fpZiPD-qNyhpX-da8aoj-oDRJVT-cZwXKs-eCv7Kd-6htLRn-9ZyQBW-6Rxapr-okhP1H-nsPgsZ-9fTUga-597jiU-pTYpsT-addMNY-r7Mg2Y-8yM5fy-9LPin8-bAoXS7-b4m7MK-ivzbUJ-sjoe23-kv4yLd-nLr74Q-s3r8FE-ppMg7X-4pUoBo-9rpmcp-4pQkLV-f7o7R9-f5axQj-hijWti-4NvJwH-asN6B6-pBNiMy-716m6i-bFjcvv-q8Mzx3-7i7iLg'
            },
            {
-             'title': 'Placa in Dubrovnik',
-             'url': 'images/dubrovnik.jpg'
+             'title': 'Placa in Dubrovnik, Croatia',
+             'url': 'images/dubrovnik.jpg',
+             'source': 'http://www.dubrovnikcroatia.info/dubrovnik-old-city.html'
            },
            {
-             'title': 'Fez el Bali, Morocco',
+             'title': 'Fez Medina, Morocco',
              'url': 'images/fez.jpg',
              'source': 'https://www.flickr.com/photos/papy06/20799623406/in/photolist-xFZvoE-wSaQhg-xUFwTR-ybZzTm-wdbTqY-pRKF2m-qi3fMb-qc8sLi-pmuEoB-zQksba-x4RuAg-APPkhk-q7Tbu9-xyUj5s-xYgo7H-xdf5Bi-DAH9wJ-xKgTxg-stj27D-yjUjY1-xsxFfn-ytK62N-xDjNJs-AjW1Rg-yLvcDD-ypCHuQ-xk1PBC-AFLjqA-q73kJ3-xjJFAY-Aq923N-pZZJNA-qFdxGe-BN8g34-rJ2Bjv-qah5z1-AAvkKs-pcRLes-pKtzGr-rM9bJY-yQqH5r-qnYQpM-AN1Epv-pQoJfn-x5C2vx-r2VSRH-zkepjG-yEQdfW-EQSMfU-C1ahBh'
            },
@@ -32,7 +34,8 @@
            },
            {
              'title': 'Souk in the Medina, Marrakech',
-             'url': 'images/marrakech.jpg'
+             'url': 'images/marrakech.jpg',
+             'source': 'https://www.flickr.com/photos/dascayman/7106796603/in/photolist-bQ1c2V-nHuLFG-eXhUUo-rhNPxK-4b5rBP-fJPptv-dqfDyL-rjxTjS-Y1Geg-ry65q2-s9gSsq-eUnnCN-dxU6qR-qgGKzs-5AGWdW-dWJhFP-8XSRMx-A5HJB-p2KZWG-6vBocj-fJPHHa-9Aj7Dm-myAbMM-yTRmu-sW285v-5AGW5Y-oDuxDR-aPCf8k-6vBoCu-uzSFmx-6vBobs-5ACEhD-eEH2q5-6erEeF-tAqQC2-fK7pFf-gWGr73-A5HPh-fJPwPt-5ACEeT-4gr562-48pbFE-eEr46Q-4gvaML-7w7zp3-pJ2oE6-qvNTsj-rDmhEd-7chW3U-skzzBg'
            },
            {
              'title': 'Royal Mile in Edinburgh',
@@ -41,7 +44,8 @@
            },
            {
              'title': 'Passerelle de Simone de Beauvoir in Paris',
-             'url': 'images/simonedebeauvoir.jpg'
+             'url': 'images/simonedebeauvoir.jpg',
+             'source': 'https://en.wikipedia.org/wiki/Passerelle_Simone-de-Beauvoir'
            },
            {
              'title': 'Palazzo Re Enzo, Bologna',
@@ -60,10 +64,11 @@
             },
             {
               'title': 'Place Massena in Nice, France',
-              'url': 'images/massena-nice-1.jpg'
+              'url': 'images/massena.jpg',
+              'source': 'http://www.ishlt.org/ContentDocuments/2014JulLinks_Spotlight.html'
             },
             {
-              'title': 'Khan el Khalili Bazaar, Cairo',
+              'title': 'Khan el Khalili, Cairo',
               'url': 'images/cairo.jpg',
               'source': 'https://www.flickr.com/photos/chrisschoenbohm/5146069762'
             },
@@ -80,17 +85,21 @@
             {
               'title': 'Galata in Istanbul, Turkey',
               'url': 'images/istanbul.jpg',
-              'source': 'http://holeinthedonut.com/2014/01/24/photo-trolley-on-istiklal-avenue-in-istanbul'
+              'source': 'http://holeinthedonut.com/tag/istanbul/'
+            },
+            { 'title': 'Jinli in Chengdu, Sichuan',
+              'url': 'images/jinli_chengdu.jpg',
+              'source': 'http://www.tibettoursguide.com/tour/tibet-train-tours/20-7-days-lifetime-tibet-train-tour-from-chengdu.html'
             },
             {
               'title': 'Lincoln Road in Miami',
               'url': 'images/miami.jpg',
-              'source': 'http://www.miamihabitat.com/photos-of-lincoln-road-mall.asp'
+              'source': 'https://www.flickr.com/photos/elsa11/8106287317/in/photolist-dmjQNr-cjVUnj-7iRWAh-oFZPCZ-qMG5Js-aRiqUK-5qif9u-63zjpc-btouF9-aUUV4i-v9e1Um-6GmnCo-sbTwGi-d6KhbU-9GxLxN-fFvR5H-d9M3Dw-oMeyG-sdDjMf-7D2HYD-8ZDKPp-rYU1mt-aZkzvx-5hGPq8-8ZGQyo-rydcSq-bSH5HB-BZfHH-e5kWPC-qK6Dpe-bFbQfS-fmyLTu-dF5b2v-wskVwr-bU6AXP-5X3syL-7Gfy61-qdZGZD-fm6hpG-bFbSfq-8HWqGz-sibf7Z-bU6zf2-aUUVck-jhVrEA-aUUUdT-cznwL-69jdWe-d9MuUp-i5Rh12'
             },
             {
               'title': 'Mykonos, Greece',
               'url': 'images/mykonos.jpg',
-              'source': 'http://travel.usnews.com/Mykonos_Greece/Pictures/'
+              'source': 'http://travel.usnews.com/Mykonos_Greece'
             },
             {
               'title': 'Las Ramblas in Barcelona',
@@ -119,4 +128,6 @@
          };
 
          $scope.refreshFlickr();
+         console.log($scope.featuredImage);
+
        });

@@ -11,12 +11,8 @@
              'url': 'images/capilanosusbridge.jpg'
            },
            {
-             'title': 'Cat Street in Tokyo',
+             'title': 'Cat Street - Shibuya - in Tokyo',
              'url': 'images/catstreet_tokyo.jpg'
-           },
-           {
-             'title': 'Essaouira, Morocco',
-             'url': 'images/CEH1NB.jpg'
            },
            {
              'title': 'Placa in Dubrovnik',
@@ -25,18 +21,6 @@
            {
              'title': 'Fez el Bali, Morocco',
              'url': 'images/fez.jpg'
-           },
-           {
-             'title': 'Jinli in Chengdu, Sichuan, China',
-             'url': 'images/jinli_chengdu.jpg'
-           },
-           {
-             'title': 'Cat Street (Shibuya) in Tokyo',
-             'url': 'images/catstreet_tokyo.jpg'
-           },
-           {
-             'title': 'Cat Street (Shibuya) in Tokyo',
-             'url': 'images/cat2.jpg'
            },
            {
              'title': 'Lynn Canyon Suspension Bridge in Vancouver',
@@ -55,16 +39,8 @@
              'url': 'images/simonedebeauvoir.jpg'
            },
            {
-             'title': 'Place Massena in Nice, France',
-             'url': 'images/massena.jpg'
-           },
-           {
              'title': 'Palazzo Re Enzo, Bologna',
              'url': 'images/bologna.jpg'
-           },
-           {
-             'title': 'Place Massena in Nice',
-             'url': 'images/massena.jpg'
            },
             {
               'title': 'Vienna, Austria',

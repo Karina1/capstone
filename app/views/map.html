@@ -1,18 +1,18 @@
 <!-- <html>
 <body> -->
-<!-- <div id="map">
+<div id="map">
   <h2>MAP OF PEDESTRIAN ZONE DATA</h2>
-  <h3>Mapping the coordinates of the most recent images tagged "pedestrian zone" <br> using data generated from a Flickr API</h3> -->
+  <h3>Mapping the coordinates of the most recent images tagged "pedestrian zone" <br> using data generated from a Flickr API</h3>
 
   <div>
     <div class="flyout">
-    <button class="myzones"><a href="#/about">About</a></button>
+    <!-- <button class="myzones"><a href="#/about">About</a></button> -->
     <button class="flyout-toggle"><a href="#/">Main</a></button>
     <div class="flyout-content"></div>
   </div>
 
 ​<div ng-controller="MapCtrl as vm">
-  <ng-map zoom="8" center="[40.74, -74.18]" default-style="false" class="my-map">
+  <ng-map zoom="3" center="[43.697205, 7.270596]" default-style="false" class="my-map">
 
     <marker ng-repeat="p in vm.positions track by $index"
       id="custom-marker-{{$index}}"

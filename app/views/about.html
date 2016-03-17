@@ -1,30 +1,25 @@
 <!-- <html>
 <body> -->
   <div>
-    <h2>Image of the Day<small>Pedestrian Zones<small></h2>
-    <h3>Examples of global pedestrian-friendly places</h3>
+    <h2><a class="href" href="https://en.wikipedia.org/wiki/List_of_car-free_places">Inspiring pedestrian zones
+      <p><a class="btn btn-primary" ng-click="refreshFlickr()">Another</a></p>
+    </a></h2>
   </div>
 
-    <!-- <div ng-controller="AboutCtrl"> -->
-      <img ng-src="{{featuredImage.url}}" class="massena" width='600' height='600'alt="Image of {{ featuredImage.title }}"/>
+  <div>
+    <div ng-controller="AboutCtrl">
+    <div class="frame">
       <p class="tBlock"> {{featuredImage.title}} </p>
-      </a>
-      <p><a class="btn btn-primary" ng-click="refreshFlickr()"> Another</a></p>
-  <!-- </div> -->
+      <img ng-src="{{featuredImage.url}}" class="massena" alt=Image of "{{ featuredImage.title }}"/>
+    </div>
+  </div>
+  </div>
 
   <div>
     <div class="flyout">
-    <button class="myzones"><a href="#/">Main</a></button>
-    <button class="flyout-toggle"><a href="#/map">Map</a></button>
+    <!-- <button class="myzones"><a href="#/">Main</a></button> -->
+      <button class="flyout-toggle"><a href="#/">Main</a></button>
     <div class="flyout-content"></div>
   </div>
-<!-- navig
 
-
-
-          <!-- <p class="displayText">{{displayText}}</p>
-      </div> -->
-
-
-        <!-- <p class="displayText">{{displayText}}</p> -->
-      <!-- <a><img  ng-src="{{myPicture}}" class="massena" width='600' height='600'></a> -->
+  <!-- <img ng-src="{{featuredImage.url}}" class="massena" alt=Image of "{{ featuredImage.title }}"/> -->

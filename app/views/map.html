@@ -2,58 +2,21 @@
 <body> -->
 <div id="map">
   <h2>MAP OF PEDESTRIAN ZONE DATA</h2>
-  <h3>Mapping the coordinates of the most recent images tagged "pedestrian zone" <br> using data generated from a Flickr API</h3>
+  <h3>Mapping the coordinates of the most recent images tagged "pedestrian zone" <br> or "pedestrian bridge" using data generated from a Flickr API</h3>
 
   <div>
     <div class="flyout">
-    <!-- <button class="myzones"><a href="#/about">About</a></button> -->
     <button class="flyout-toggle"><a href="#/">Main</a></button>
     <div class="flyout-content"></div>
   </div>
 
 ​<div ng-controller="MapCtrl as vm">
-  <ng-map zoom="3" center="[43.697205, 7.270596]" default-style="false" class="my-map">
+  <ng-map zoom="3" center="[38.697205, 7.270596]" default-style="false" class="my-map">
 
     <marker ng-repeat="p in vm.positions track by $index"
       id="custom-marker-{{$index}}"
       on-click="vm.map.showInfoWindow('foo', 'custom-marker-'+$index)"
       position="{{p.pos}}">
-      <!-- <div> -->
-        <!-- position {{p.name}}: {{p.pos[0]}}, {{p.pos[1]}} -->
-        <!-- <img src="images/massena.jpg" width="10px" height="10px"/> -->
-      <!-- </div> -->
     </marker>
-
-  <!-- <custom-marker ng-repeat="image in flickrData.photos.photo track by $index"
-    id="custom-marker-{{$index}}"
-    on-click="showImage('custom-marker-'+$index)"
-    position="[{{image.latitude}}, {{image.longitude}}]">
-    <div>
-      {{ image.title }}
-    </div>
-  </custom-marker> -->
-
   </ng-map>
-
-  <!-- <div>
-    <info-window id="info" on-mouseover="vm.mouseover()">
-      <div ng-non-bindable="">
-        Lat: {{anchor.getPosition().lat()}}<br/>
-        Lng: {{anchor.getPosition().lng()}}<br/>
-      </div>
-    </info-window>
-  </div> -->
-
-    <!-- <button ng-click="vm.setPositions(vm.positions1)">show positions 1</button> -->
-    <!-- <button ng-click="vm.setPositions(vm.positions2)">show positions 2</button> -->
-    <!-- <button ng-click="vm.selectNextCustomMarker()">select next marker</button> -->
-    <!-- current position: {{vm.currentPosition}}<br/> -->
-    <!-- vm.positions : {{vm.positions}} -->
-<!-- </div> -->
-
-
-  <!-- <button ng-click="vm.setPositions(vm.positions1)">show positions 1</button>
-  <button ng-click="vm.setPositions(vm.positions2)">show positions 2</button>
-  <button ng-click="vm.selectNextCustomMarker()">select next marker</button>
-  current position: {{vm.currentPosition}}<br/>
-  vm.positions : {{vm.positions}} -->
+</div>

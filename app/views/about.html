@@ -1,15 +1,15 @@
 <!-- <html>
 <body> -->
   <div>
-    <h2><a class="href" href="https://en.wikipedia.org/wiki/List_of_car-free_places">Inspiring pedestrian zones
-      <p><a class="btn btn-primary" ng-click="refreshFlickr()">Imagine</a></p>
+    <h2> <!--<a class="href" href="https://en.wikipedia.org/wiki/List_of_car-free_places">-->Inspiring pedestrian zones
+      <p><a class="btn btn-primary" ng-click="refreshFlickr()">Next</a></p>
     </a></h2>
   </div>
 
   <div>
     <div ng-controller="AboutCtrl">
     <div class="frame">
-      <p class="tBlock"> {{featuredImage.title}} </p>
+      <p class="tBlock"> <!--<a href="{{featuredImage.source}} /">--> {{featuredImage.title}}</a></p>
       <img ng-src="{{featuredImage.url}}" class="massena" alt="{{ featuredImage.title }}"/>
     </div>
   </div>
@@ -17,7 +17,6 @@
 
   <div>
     <div class="flyout">
-    <!-- <button class="myzones"><a href="#/">Main</a></button> -->
       <button class="flyout-toggle"><a href="#/">Main</a></button>
     <div class="flyout-content"></div>
   </div>

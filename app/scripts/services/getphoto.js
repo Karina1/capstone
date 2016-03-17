@@ -1,12 +1,12 @@
-'use strict';
-
-/**
- * @ngdoc service
- * @name capstoneApp.getphoto
- * @description
- * # getphoto
- * Factory in the capstoneApp.
- */
+// 'use strict';
+//
+// /**
+//  * @ngdoc service
+// //  * @name capstoneApp.getphoto
+//  * @description
+//  * # getphoto
+//  * Factory in the capstoneApp.
+//  */
  // angular.module('capstoneApp')
  //   .factory('getPhot', function ($resource) {
  //     // Service logic

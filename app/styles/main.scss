@@ -29,14 +29,14 @@ body {
 }
 
 // View - About
+
 .frame {
   background: lightgray;
   margin-bottom: 10px;
 }
+
 .massena {
-    // width: auto;
     margin-top: 20px;
-    // margin-bottom: 10px;
     padding-top: 0;
     margin-left:auto;
     margin-right:auto;
@@ -44,14 +44,6 @@ body {
     height: auto;
     width: auto;
     display: block;
-    // margin-left: auto;
-    // margin-right: auto;
-    // display: block;
-    // padding: 20px;
-    // margin-left: 25%;
-    // z-index: -1;
-    // margin-top: -85px
-    // background-color: green;
 }
 
 p.tBlock {
@@ -63,20 +55,6 @@ p.tBlock {
   font-color: yellow;
   font-family: 'Calligraffitti';
 }
- :hover a.href{
-  	font-color: yellow;
-    text-decoration: none;
-
-}
-
-// #map {
-//     top: -280px;
-//     left: -100px;
-//     width: 900px;
-//     height: 800px;
-//     bottom: 0px;
-//     z-index: -2;
-// }
 
 h2 {
   margin-top: 10px;
@@ -95,7 +73,6 @@ h2 {
   // }
 }
 h3 {
-  // margin-left: 70px;
   text-align: center;
   color: white;
   padding-top: 0;
@@ -223,6 +200,10 @@ h3 {
   // margin-left: 40px;
 }
 
+.my-map {
+  height:600px;
+}
+
 /* Media query: change number of items per row */
 
 @media screen and (max-width: 1190px) {
@@ -256,16 +237,15 @@ h3 {
 		width: calc(100% / 2);
 	}
   .flyout-toggle {
-    // right: -120px;
     font-size: 1.2em;
     width: 33.3333333%; /* Fallback */
-    // width: -webkit-calc(100% / 3);
-    // width: calc(100% / 3);
     color: green;
   }
+
   h1 {
     font-size: .8em;
   }
+
   .container {
     background-color: cornflowerblue;
   }
@@ -278,8 +258,4 @@ h3 {
   h2 {
     font-size: .3em;
   }
-}
-
-.my-map {
-  height:1000px;
 }

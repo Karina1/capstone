@@ -21,7 +21,7 @@ body {
   height: 100%;
   margin: 20px;
   background: darkgray;
-  font-family: 'Josefin Slab';
+  font-family: 'Josefin Slab', serif;
 }
 .container {
   background: gray;
@@ -53,7 +53,7 @@ p.tBlock {
   padding-top: 20px;
   margin-top: 0;
   font-color: yellow;
-  font-family: 'Calligraffitti';
+  font-family: 'Calligraffitti', cursive;
 }
 
 h2 {
@@ -77,15 +77,6 @@ h3 {
   color: white;
   padding-top: 0;
   margin-top: -5px;
-
-}
-h4 {
-  text-align: center;
-  color: white;
-  padding-top: 0;
-  margin-top: -5px;
-  font-family: 'Rock Salt', serif;
-  letter-spacing: 1.3px;
 
 }
 
@@ -207,7 +198,6 @@ h4 {
 
 .my-map {
   height:600px;
-  font-family: 'Rock Salt', serif;
 }
 
 /* Media query: change number of items per row */

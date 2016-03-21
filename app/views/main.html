@@ -7,7 +7,7 @@
   <div class="flyout-content"></div>
 </div>
   <h2>Where in the world can I walk?</h2>
-    <h3>Flickr images tagged with "pedestrian zone" or "pedestrian bridge" where people are walking right now</h3>
+    <h3>Flickr images tagged with "pedestrian zone" or "footbridge" where people are walking right now</h3>
     <ul id="photos" ng-repeat="image in flickrData.photos.photo">
       <li><a href="https://www.flickr.com/photos/{{image.owner}}/{{image.id}}"><img ng-src="{{ image.url_m }}" height="300" width="auto"/><div><h3>{{ image.title }}</h3></div></a></li>
     </ul>

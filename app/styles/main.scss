@@ -79,6 +79,15 @@ h3 {
   margin-top: -5px;
 
 }
+h4 {
+  text-align: center;
+  color: white;
+  padding-top: 0;
+  margin-top: -5px;
+  font-family: 'Rock Salt', serif;
+  letter-spacing: 1.3px;
+
+}
 
 .flyout-toggle {
     position: absolute;
@@ -189,7 +198,7 @@ h3 {
 #photos li a div h3 {
 	width: 100%;
 	color: #fff;
-	text-transform: capitalize;;
+	text-transform: capitalize;
 	font-size: 1.2em;
 	letter-spacing: 2px;
 	padding: 0;
@@ -198,6 +207,7 @@ h3 {
 
 .my-map {
   height:600px;
+  font-family: 'Rock Salt', serif;
 }
 
 /* Media query: change number of items per row */
